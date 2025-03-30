@@ -4,7 +4,7 @@
 [![GitHub actions status](https://github.com/Kratzcomycete/Fungal-Genome-Processing-Snakemake/workflows/Tests/badge.svg?branch=main)](https://github.com/Kratzcomycete/Fungal-Genome-Processing-Snakemake/actions?query=branch%3Amain+workflow%3ATests)
 
 
-A Snakemake workflow for `This snakemake pipeline is designed for processing fungal genome sequencing data. It automates quality control, read trimming, genome assembly, and read mapping, providing a streamlined and reproducible workflow for fungal genomic analysis.`
+A Snakemake workflow for processing fungal genome sequencing data. It automates quality control, read trimming, genome assembly, and read mapping, providing a streamlined and reproducible workflow for fungal genomic analysis.
 
 
 ## Usage
