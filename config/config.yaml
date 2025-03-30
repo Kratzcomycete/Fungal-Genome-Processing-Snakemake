@@ -1,0 +1,38 @@
+# Set threads parameter for each rule
+fastqc_threads: 8
+fastp_threads: 8
+spades_threads: 16
+bowtie2_threads: 8
+
+# Set SPAdes kmer val
+spades_kmer_value: "short" # Options - "short", "long"
+
+# fastq files
+input:
+    fastq: raw_reads
+    fastp: raw_reads
+
+# fastqc config 
+fastqc:
+    results: results/fastqc
+    log: results/fastqc/fastqc_log
+
+# multiqc config
+multiqc:
+    results: results/multiqc
+    log: results/multiqc/multiqc_log/
+
+# fastP config
+fastp:
+    results: results/fastp
+    log: results/fastp/fastp_log
+
+# spades assembly config
+spades:
+    results: results/spades
+    log: results/spades/spades_log
+  
+# bowtie2
+bowtie2:
+    results: results/bowtie2
+    log: results/bowtie2/bowtie2_log
