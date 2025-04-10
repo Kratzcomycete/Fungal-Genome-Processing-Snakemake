@@ -1,9 +1,0 @@
-name: spades
-channels:
-  - conda-forge
-  - bioconda
-dependencies:
-  - spades=4.1.0
-  - python=3.9
-
-
