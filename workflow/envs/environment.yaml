@@ -1,0 +1,5 @@
+name: fungal-pipeline
+channels:
+  - defaults
+dependencies:
+  - bioconda::snakemake>=8.30.0
