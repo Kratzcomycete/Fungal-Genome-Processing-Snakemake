@@ -5,9 +5,47 @@
 
 
 A Snakemake workflow for processing fungal genome sequencing data. It automates quality control, read trimming, genome assembly, and read mapping, providing a reproducible workflow for fungal genomic analysis.
-
+## Input
+Please add the genomes you wish to process into a folder called "raw_reads" (this can be changed by modifying the input parameter for fastp and fastq in the "config.yaml" file).
+### They must match the naming convention: {sample}_R1.fastq.gz or {sample}_R2.fastq.gz
 
 ## Usage
+
+1. Clone the repository using
+```bash
+   git pull https://github.com/Kratzcomycete/Fungal-Genome-Processing-Snakemake.git
+```
+2. Enter the cloned directory
+  ```bash
+   cd Fungal-Genome-Processing-Snakemake
+```
+3. Create a conda environment named Fungal-Genome-Processing-Snakemake to run the pipeline inside of
+ ```bash
+   conda env create --file workflow/envs/environment.yaml
+```
+4. Activate conda environment before running pipeline
+ ```bash
+   conda activate Fungal-Genome-Processing-Snakemake
+```
+5. Run the pipeline using
+   ```bash
+   snakemake --cores <number_of_cores> --use-conda
+   ```
+
+Modifications can be made to the .yaml file for computational adjustments
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 The usage of this workflow is described in the [Snakemake Workflow Catalog](https://snakemake.github.io/snakemake-workflow-catalog/?usage=<Kratzcomycete>%2F<Fungal-Genome-Processing-Snakemake>).
 
